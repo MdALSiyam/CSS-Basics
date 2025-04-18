@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Universal Selector */
+    * {
+      color: blue;  
+    }
+
+    /* Type Selector */
+    p {
+      font-size: 16px; 
+    }
+
+    /* ID Selector */
+    #main-header {
+      background-color: lightgray;
+      padding: 20px;
+    }
+
+    /* Class Selector */
+    .button {
+      padding: 10px 20px;
+      border: 1px solid #333;
+      cursor: pointer;
+    }
+
+    /* Multiple-Class Selector */
+    .button.primary {
+      background-color: green; 
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-header">CSS Selectors</h1>
+
+  <p>This is a paragraph that is blue and has a font size of 16px.</p>
+  
+  <button class="button">Click Me</button>
+  <button class="button primary">Submit</button> 
+
+  <div class="content">
+    <p>This paragraph is styled by the type selector (font size 16px).</p>
+  </div>
+</body>
+</html>

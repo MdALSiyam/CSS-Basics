@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+header {
+  position: static;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+nav {
+  float: right;
+    width: 200px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    margin-bottom: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+main {
+    flex-grow: 1;
+    margin-left: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+aside {
+    width: 200px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+        <h1>CSS Layout</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+        </main>
+
+        <aside>
+            <h3>Sidebar</h3>
+            <p>This is a sidebar with additional information.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Md. Abdul Latif Siyam</p>
+    </footer>
+
+</body>
+</html>

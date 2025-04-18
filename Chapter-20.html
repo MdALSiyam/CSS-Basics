@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      transition: width 2s linear 1s;
+    }
+    div:hover {
+      width: 300px;
+      height: 300px;
+    }
+    .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: moveAndChangeColor 5s infinite alternate;
+        }
+      @keyframes moveAndChangeColor {
+            0% {
+                transform: translateX(0);
+                background-color: blue;
+            }
+            50% {
+                transform: translateX(300px);
+                background-color: red;
+            }
+            100% {
+                transform: translateX(0);
+                background-color: green;
+            }
+        }
+  </style>
+</head>
+<body>
+  <h1>CSS Transitions and Animations</h1>
+  <hr>  
+
+  <h2>CSS Transitions</h2>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente animi facilis veniam officia unde cupiditate aliquid ad molestias soluta ea aspernatur, excepturi iste? Adipisci omnis fugiat sit commodi consequatur!</div>
+  <br>
+
+  <h2>CSS Animations</h2>
+  <div class="animated-box"></div>
+</body>
+</html>

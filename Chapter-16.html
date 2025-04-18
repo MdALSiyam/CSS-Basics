@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Set a background color for the page */
+    body {
+      background-color: #f0f0f0;
+      font-family: 'Arial', sans-serif; 
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Styling for the main heading */
+    h1 {
+      font-family: 'Georgia', serif;
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase; 
+      letter-spacing: 2px; 
+      color: #333;
+      margin-top: 50px;
+    }
+
+    /* Styling for the paragraph */
+    p {
+      font-size: 18px;
+      line-height: 1.6; 
+      text-align: justify; 
+      color: #555;
+      max-width: 800px;
+      margin: 20px auto; 
+    }
+
+    /* Styling for a special section with custom font */
+    .highlighted-text {
+      text-align: center;
+      font-family: 'Courier New', monospace;
+      font-size: 20px;
+      font-style: italic; 
+      color: #0077cc; 
+      text-decoration: underline; 
+    }
+
+    /* Example of a positioned element */
+    .positioned-box {
+      position: relative;
+      background-color: #ffcc00;
+      width: 200px;
+      height: 100px;
+      margin: 30px auto;
+      text-align: center;
+      line-height: 100px; 
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+    }
+
+    /* A box that will overlap another element */
+    .overlap-box {
+      position: absolute;
+      top: 20px;
+      left: 50px;
+      width: 100px;
+      height: 50px;
+      background-color: #ff5733;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    /* Example of text rendering optimization */
+    .optimized-text {
+      font-feature-settings: "liga" 1; 
+      text-rendering: optimizeLegibility; 
+      font-smooth: always; 
+      font-size: 20px;
+      color: #222;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>CSS Text</h1>
+
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum corrupti deleniti officiis saepe eum assumenda voluptatibus aspernatur sapiente nemo beatae, iure veritatis consequuntur voluptas voluptatum nam iste autem, eligendi fugit!</p>
+
+  <p class="highlighted-text">Md. Abdul Latif Siyam</p>
+
+  <div class="positioned-box">
+    Main Box
+    <div class="overlap-box">Overlap</div>
+  </div>
+
+  <p class="optimized-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem laborum voluptatibus rem ratione et exercitationem accusantium sit nam minus eaque fuga saepe aliquid officiis, qui impedit, assumenda aut quaerat eligendi!</p>
+
+</body>
+</html>

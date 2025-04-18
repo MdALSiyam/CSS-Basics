@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element with box-sizing: border-box */
+              .box-border-box {
+            width: 100px;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid black;
+            box-sizing: border-box; 
+            background-color: lightgreen;
+
+        }
+        /* Element with box-sizing: content-box (default) */
+        .box-content-box {
+            width: 100px;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid black;
+            box-sizing: content-box; 
+            background-color: lightblue;
+        }
+        /* Style for the container */
+        .container {
+      width: 50%;
+      margin: 20px;
+      padding: 20px;
+      border: 2px solid #000;
+      background-color: lightblue;
+    }
+    /* Style for the inner box */
+    .box {
+      width: 50%;
+      margin: auto;
+      padding: 10px;
+      background-color: lightgreen;
+      border: 2px solid #333;
+    }
+    p {
+      outline: 5px dotted red;
+    }
+    </style>
+</head>
+<body>
+  <h1>CSS Box Model</h1>
+  <hr>
+
+  <h2>Box Sizing</h2>
+  <div class="box-border-box">Border Box</div><br>
+  <div class="box-content-box">Content Box</div><br>
+
+  <h2>CSS Margin</h2>
+  <div class="container">
+    <div class="box">
+      Md. Abdul Latif Siyam
+    </div>
+  </div>
+  <br>
+
+  <h2>CSS Outline</h2>
+  <p>This is a paragraph.</p>
+</body>
+</html>

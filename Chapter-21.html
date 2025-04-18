@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+--a-global-color: red;
+}
+section {
+--a-local-color: blue;
+}
+header {
+color: var(--a-global-color);
+}
+footer {
+color: var(--a-local-color);
+}
+.main-content {
+min-height: calc(10vh - 9px);
+}
+.long-content {
+border: 1px solid #ccc;
+}
+body {
+font-size: 12px;
+counter-reset: my-section;
+}
+h3 {
+counter-reset: my-sub-section;
+}
+h3::before {
+counter-increment: my-section;
+content: "Section " counter(my-section) ". ";
+}
+h4::before {
+counter-increment: my-sub-section;
+content: counter(my-section) "." counter(my-sub-section) " ";
+}
+  </style>
+</head>
+<body>
+  <h1>Advanced CSS</h1>
+  <hr>
+  <h2>a) CSS Variables</h2>
+  <section>
+    <header>
+    <h5>This is a heading</h5>
+    </header>
+    <p>This is a paragraph.</p>
+    <footer>
+    <p>This is a footer.</p>
+    </footer>
+    </section>
+    <footer>
+      <p>This is the main footer.</p>
+    </footer>
+    <br>
+
+    <h2>b) CSS Calculation</h2>
+    <div class="main-content">
+      <p>This is a paragraph</p>
+      <p class="long-content">This is a long paragraph</p>
+      </div>
+      <br>
+
+    <h2>c) CSS Counters</h2>
+<h3>HTML Tutorials:</h3>
+<h4>HTML</h4>
+<h4>CSS</h4>
+<h3>Scripting Tutorials:</h3>
+<h4>JavaScript</h4>
+<h4>VBScript</h4>
+</body>
+</html>
